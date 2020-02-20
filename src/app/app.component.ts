@@ -7,13 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  loadedFeature = 'recipe';
 
   constructor(private router: Router) {
-  }
-
-  onNavigate(feature: string) {
-    // this.loadedFeature = feature;
-    this.router.navigate([`/${feature}`]);
   }
 }
